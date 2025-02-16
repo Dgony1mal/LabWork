@@ -17,11 +17,11 @@ int main() {
     x1 = (-b + sqrt(d)) / (2 * a);
     x2 = (-b - sqrt(d)) / (2 * a);
 
-    printf("К x1 = %.2lf\n", x1);
-    printf("К x2 = %.2lf\n", x2);
+    printf("K x1 = %.2lf\n", x1);
+    printf("K x2 = %.2lf\n", x2);
   } else {
 
-    printf("К нет, д отрицательный.\n");
+    printf("K Г­ГҐГІ, Г¤ Г®ГІГ°ГЁГ¶Г ГІГҐГ«ГјГ­Г»Г©.\n");
   }
 
   return 0;
