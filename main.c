@@ -1,19 +1,29 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+int main() {
 
-int main(int argc, char *argv[]) {
-	double a, b, c;
-	double x1, x2, d;
-	a=5.3;
-	b=2.5;
-	c=1.1;
-	d = b*b - 4*a*c;
-	x1 = -b + sqrt(d)/(2*a);
-	x2 = -b - sqrt(d)/(2*a);
+  double a, b, c;
+  double d, x1, x2;
 
-	printf("x1=%lf \n", x1);
-	printf("xw=%lf \n", x2);
-	return 0;
+  a = 1.0;
+  b = 5.0;
+  c = 6.0;
+
+  d = b * b - 4 * a * c;
+
+  if (d >= 0) {
+ 
+    x1 = (-b + sqrt(d)) / (2 * a);
+    x2 = (-b - sqrt(d)) / (2 * a);
+
+    printf("К x1 = %.2lf\n", x1);
+    printf("К x2 = %.2lf\n", x2);
+  } else {
+
+    printf("К нет, д отрицательный.\n");
+  }
+
+  return 0;
 }
+
