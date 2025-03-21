@@ -8,14 +8,11 @@ int main(int argc, char *argv[]) {
     char choice;
 
     do {
-        // Ввод коэффициентов квадратного уравнения
         printf("Введите коэффициенты a, b, c: ");
         scanf("%lf %lf %lf", &a, &b, &c);
 
-        // Вычисление дискриминанта
         d = b * b - 4 * a * c;
 
-        // Проверка значения дискриминанта
         if (d > 0) {
             x1 = (-b + sqrt(d)) / (2 * a);
             x2 = (-b - sqrt(d)) / (2 * a);
@@ -28,9 +25,8 @@ int main(int argc, char *argv[]) {
             printf("Корней нет, дискриминант меньше нуля.\n");
         }
 
-        // Запрос на повторное решение
         printf("Решить снова? (y/n): ");
-        while (getchar() != '\n'); // Очистка буфера ввода
+        while (getchar() != '\n');
         scanf("%c", &choice);
 
     } while (choice == 'y' || choice == 'Y');
