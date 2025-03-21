@@ -2,8 +2,7 @@
 
 int main() {
     double matrix[3][3];
-    double sumMainDiagonal = 0.0;
-    double sumSideDiagonal = 0.0;
+    double sumMainDiagonal = 0.0, sumSideDiagonal = 0.0;
 
     printf("Введите значения матрицы 3х3:\n");
     for (int i = 0; i < 3; i++) {
