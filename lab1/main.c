@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
         printf("Введите коэффициенты a, b, c: ");
         scanf("%lf %lf %lf", &a, &b, &c);
 
-        d = b * b - 4 * a * c;
+        d = pow(b, 2) - 4 * a * c;
 
         if (d > 0) {
             x1 = (-b + sqrt(d)) / (2 * a);
